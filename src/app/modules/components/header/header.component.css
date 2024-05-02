@@ -1,0 +1,84 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 16px 24px;
+    & nav{
+        display: none;
+        color: var(--medium-gray);
+        border: 1px solid red;
+        & .front{
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: var(--almost-white);
+            height: 100%;
+            width: 70%;
+            padding: 24px;
+            & li{
+                list-style: none;
+                cursor: pointer;
+                margin-bottom: 16px;
+            }
+        }
+        & .back{
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* opacity: 0.75; */
+            background-color: var(--medium-gray);
+            height: 100%;
+            width: 100%;
+        }
+        & .close-container{
+           text-align: right;
+           & img{
+               cursor: pointer;
+           }
+        }
+
+        & .features-ul, .company-ul{
+            padding: 12px 0px 0px 20px;
+            /* display: none; */
+        }
+        & .submenu-btn{
+            border: 1px solid red;
+            width: 120px;
+            height: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        & #login-btn{
+            display: block;
+            margin: 0 auto 20px;
+        }
+        & #register-btn{
+            display: block;
+            border: 2px solid var(--medium-gray);
+            margin: 0 auto;
+            border-radius: 15px;
+            width: 195px;
+            height: 45px;
+        }
+        & .btn-container{
+            border: 1px solid red;
+            position: absolute;
+            bottom: 10%;
+        }
+    }
+
+    & .hamburger-menu{
+        display: none;
+    }
+}
+
+button{
+    font-family: 'Epilogue', sans-serif;
+    background-color: var(--almost-white);
+    border: none;
+    cursor: pointer;
+    color: var(--medium-gray);
+    font-size: 1em;
+}
