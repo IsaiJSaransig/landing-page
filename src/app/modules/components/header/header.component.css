@@ -6,7 +6,6 @@ header{
     & nav{
         display: none;
         color: var(--medium-gray);
-        border: 1px solid red;
         & .front{
             position: absolute;
             top: 0;
@@ -25,7 +24,7 @@ header{
             position: absolute;
             top: 0;
             left: 0;
-            /* opacity: 0.75; */
+            opacity: 0.75;
             background-color: var(--medium-gray);
             height: 100%;
             width: 100%;
@@ -42,7 +41,6 @@ header{
             /* display: none; */
         }
         & .submenu-btn{
-            border: 1px solid red;
             width: 120px;
             height: 25px;
             display: flex;
@@ -63,14 +61,13 @@ header{
             height: 45px;
         }
         & .btn-container{
-            border: 1px solid red;
             position: absolute;
             bottom: 10%;
         }
     }
 
     & .hamburger-menu{
-        display: none;
+        cursor: pointer;
     }
 }
 
