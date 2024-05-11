@@ -1,11 +1,12 @@
 <header>
     <img src="../../../../assets/images/logo.svg" alt="logo">
-    <img src="../../../../assets/images/icon-menu.svg" alt="" class="hamburger-menu">
+    <img src="../../../../assets/images/icon-menu.svg" alt="" id="hamburger" class="hamburger-menu" (click)="toggleNav()">
+
     <nav>
         <div class="back"></div>
         <div class="front">
             <div class="close-container">
-                <img src="../../../../assets/images/icon-close-menu.svg" alt="" id="close">
+                <img src="../../../../assets/images/icon-close-menu.svg" alt="" id="close" (click)="toggleNav()">
             </div>
             <ul>
                 <li>

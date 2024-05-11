@@ -8,12 +8,20 @@ import { Component, ElementRef } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+
   constructor(private elementRef: ElementRef) {}
 
-  ngAfterViewInit() {
-    const hamburgerMenu = this.elementRef.nativeElement.querySelector('.hamburger-menu');
-    hamburgerMenu.addEventListener('click', () => {
-      hamburgerMenu.classList.toggle('active');
-    });
+  ngOnInit(): void {
+    this.toggleNav();
+  }
+
+  toggleNav() {
+    const nav = this.elementRef.nativeElement.querySelector('nav');
+    nav.style.display = nav.style.display === 'none' ? 'block' : 'none';
+  }
+
+  closeNav() {
+    const nav = this.elementRef.nativeElement.querySelector('nav');
+    nav.style.display = 'none';
   }
 }
